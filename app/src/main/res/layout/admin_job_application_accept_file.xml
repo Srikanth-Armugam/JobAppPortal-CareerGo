@@ -10,12 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="20dp"
+        android:backgroundTint="@color/white"
         app:cardCornerRadius="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cardColor"
             android:orientation="vertical">
 
 
@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Title"
+                android:textColor="@color/purple"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
@@ -33,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:textColor="@color/purple"
                 android:text="Description"
                 android:textSize="35dp" />
 
@@ -42,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:textColor="@color/purple"
                 android:text="Resume Link"
                 android:textSize="35dp" />
 
@@ -53,6 +56,8 @@
                 android:layout_height="wrap_content"
                 android:text="Accept Application"
                 android:layout_gravity="center"
+                android:backgroundTint="@color/purple"
+                android:padding="20dp"
                 android:layout_margin="10dp"/>
 
 

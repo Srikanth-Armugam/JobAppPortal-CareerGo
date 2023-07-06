@@ -5,20 +5,40 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/loginbkg1"
     tools:context=".Fragments.UserDashboardFragment">
 
 
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/UserDashBoardSwitch"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:thumb="@drawable/thumb"
-        app:track="@drawable/track"
-        app:showText="true"
-        android:textOn="Placed Applications"
-        android:textOff="All Applications"
-       android:layout_gravity="center"
-        android:layout_marginTop="30dp" />
+        android:layout_margin="25dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        android:backgroundTint="@color/purple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/UserDashBoardSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:showText="true"
+                android:textOn="Placed Applications"
+                android:textOff="All Applications"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="30dp" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <FrameLayout
         android:id="@+id/UserDashBoardContainer"

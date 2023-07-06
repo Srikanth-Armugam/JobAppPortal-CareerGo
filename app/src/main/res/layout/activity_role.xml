@@ -5,36 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cardColor"
+    android:background="@drawable/loginbkg1"
     tools:context=".Activities.RoleActivity">
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="30dp"
+        android:textSize="40sp"
         android:layout_margin="20dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:text="Choose Your Role"/>
 
-
+    <ImageView
+        android:id="@+id/myImageView1"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:src="@drawable/admin"
+        />
     <Button
         android:id="@+id/AdminBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:layout_margin="10dp"
+        android:padding="20dp"
+       android:backgroundTint="@color/purple"
         android:layout_gravity="center"
         />
-
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user"
+        />
     <Button
         android:id="@+id/JobSeekerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:textSize="20dp"
+        android:padding="20dp"
         android:layout_gravity="center"
+       android:backgroundTint="@color/purple"
+        android:textStyle="bold"
         android:text="JobSeeker"/>
 
 </LinearLayout>

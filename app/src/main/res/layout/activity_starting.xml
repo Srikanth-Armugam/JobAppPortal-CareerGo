@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginbkg1"
     tools:context=".Activities.StartingActivity">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
 
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WelCome To Job Portal"
+        android:text="Welcome To Career GO"
         android:textSize="40dp"
+        android:layout_below="@+id/linear1"
+        android:textColor="@color/purple"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_centerInParent="true"
@@ -22,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Get Started"
+        android:backgroundTint="@color/purple"
         android:layout_alignParentBottom="true"
         />
 

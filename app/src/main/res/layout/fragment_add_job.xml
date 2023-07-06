@@ -1,80 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg1"
     tools:context=".Fragments.AddJobFragment">
 
-
-    <EditText
-        android:id="@+id/CompanyNameEditTxt"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Company Name"
-        />
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:backgroundTint="@color/white">
 
-    <EditText
-        android:id="@+id/JobTitleEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Job Title"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
 
-    <EditText
-        android:id="@+id/JobSalaryEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Job Salary"
-        />
 
-    <EditText
-        android:id="@+id/JobStartDateEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Start Date"
-        />
+            <EditText
+                android:id="@+id/CompanyNameEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Company Name"
+                />
 
-    <EditText
-        android:id="@+id/JobLastDateEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Apply By"
-        />
+            <EditText
+                android:id="@+id/JobTitleEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Title"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
 
-    <EditText
-        android:id="@+id/TotalOpeningsEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="No of Openings"
-        />
+            <EditText
+                android:id="@+id/JobSalaryEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Salary"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
 
-    <EditText
-        android:id="@+id/AboutJobEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="ABout the Job"
-        />
+            <EditText
+                android:id="@+id/JobStartDateEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
 
-    <EditText
-        android:id="@+id/SkillsRequiredEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Skills Required"
-        />
+            <EditText
+                android:id="@+id/JobLastDateEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apply By"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
 
-    <EditText
-        android:id="@+id/AddationalInfoEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Additional Information"
-        />
+            <EditText
+                android:id="@+id/TotalOpeningsEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No of Openings"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
 
-    <Button
-        android:id="@+id/AddJobBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Job"
-        android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/AboutJobEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ABout the Job"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
+
+            <EditText
+                android:id="@+id/SkillsRequiredEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Skills Required"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
+
+            <EditText
+                android:id="@+id/AddationalInfoEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Additional Information"
+                android:textColor="@color/purple"
+                android:textColorHint="@color/purple"
+                />
+
+            <Button
+                android:id="@+id/AddJobBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Job"
+                android:backgroundTint="@color/purple"
+                android:padding="20dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </LinearLayout>

@@ -5,19 +5,31 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/loginbkg1"
     tools:context=".Fragments.AdminProfileFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/white"
         android:padding="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cardColor"
             android:orientation="vertical">
 
 
@@ -39,6 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="User Name"
+                    android:textColor="@color/purple"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:textStyle="bold"
@@ -53,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SignOut"
+                android:backgroundTint="@color/purple"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"/>
 
