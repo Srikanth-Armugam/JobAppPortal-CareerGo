@@ -4,6 +4,7 @@ package com.example.jobappportal.Activities;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jobappportal.MainActivity;
 import com.example.jobappportal.R;
 import com.example.jobappportal.R.id;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -21,12 +23,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 
+
 public class JobDetailsActivity extends AppCompatActivity {
 
     TextView companyNameTxt, jobTitleTxt, jobDescriptionTxt, jobSalaryTxt, startDateTxt, lastDateTxt;
     TextView totalOpeningsTxt, requiredSkillsTxt, additionalInfoTxt;
 
-    TextView resumeLinkEditTxt;
+    EditText resumeLinkEditTxt;
     Button applyJobBtn;
 
 
@@ -88,6 +91,9 @@ public class JobDetailsActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please,add Resume Link", Toast.LENGTH_SHORT).show();
                 } else {
                     applyForJob(jobTitle, userId, adminId, resumeLink, companyName, userName);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
 
             }

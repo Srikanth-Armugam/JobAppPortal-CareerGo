@@ -46,8 +46,6 @@ public class AdminActivity extends AppCompatActivity {
                     //Assigining Fragment as Null
                     Fragment fragment = null;
                     int id=item.getItemId();
-
-
                         //Shows the Appropriate Fragment by using id as address
                         if(id==R.id.homeMenu) {
                            fragment= new AddJobFragment();
